@@ -1,0 +1,44 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px; 
+    color: #2E2F42; 
+}
+
+.form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    margin-left: 156px;
+}
+
+.number-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;    ;
+}
+span {
+    align-self: flex-start;
+}
+
+.number {
+    min-height: 40px;
+    border-radius: 4px;    
+    border: 1px solid #808080;
+    
+}
+fieldset {
+    margin-bottom: 24px;
+}
+
+button {
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;   
+    background-color: #4E75FF;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
