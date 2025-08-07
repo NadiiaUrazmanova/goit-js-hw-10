@@ -74,6 +74,7 @@ startBtn.addEventListener('click', () => {
   if (!userSelectedDate) return;
 
   startBtn.disabled = true;
+  datetimePicker.disabled = true;
 
   timerId = setInterval(() => {
     const now = new Date();
@@ -87,10 +88,14 @@ startBtn.addEventListener('click', () => {
         message: 'Countdown finished!',
         position: 'topRight',
       });
+      startBtn.disabled = false;
+      datetimePicker.disabled = false;
       return;
     }
+    
 
     const time = convertMs(diff);
     updateTimerDisplay(time);
   }, 1000);
+  
 });
